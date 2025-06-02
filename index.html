@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Transports en Commun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Météo pour les Transports en Commun</h1>
+        </header>
+        <main>
+            <div id="weather-container" class="weather-container hidden">
+                <div class="city-container">
+                    <h2 id="weather-city">Chargement...</h2>
+                </div>
+                <div class="weather-info">
+                    <div class="temperature-container">
+                        <span id="weather-temp">--°C</span>
+                    </div>
+                    <div class="description-container">
+                        <img id="weather-icon" src="" alt="Icône météo">
+                        <span id="weather-desc">Chargement...</span>
+                    </div>
+                    <div class="details-container">
+                        <div id="weather-humidity">Humidité: --%</div>
+                        <div id="weather-wind">Vent: -- m/s</div>
+                    </div>
+                </div>
+                <div class="update-info">
+                    <span id="last-update">Dernière mise à jour: --:--:--</span>
+                </div>
+            </div>
+            <div id="error-container" class="error-container hidden">
+                Une erreur est survenue lors du chargement des données météo.
+            </div>
+        </main>
+        <footer>
+            <p>Application Météo pour Transports en Commun</p>
+            <p>Eric Pichenot - Données fournies par OpenWeatherMap</p>
+        </footer>
+    </div>
+    <script src="meteo.js"></script>
+</body>
+</html>
