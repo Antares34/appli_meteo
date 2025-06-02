@@ -20,7 +20,7 @@ const elements = {
 
 // Configuration par défaut (utilisée en cas d'échec du chargement du fichier conf.json)
 let config = {
-    city: "Paris",
+    city: "Montpellier,FR", // Ville par défaut
     updateInterval: 3600000, // 1 heure en millisecondes
     units: "metric",
     lang: "fr",
